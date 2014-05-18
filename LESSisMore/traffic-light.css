@@ -1,0 +1,31 @@
+﻿.trafic-light {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media (min-width: 200px) {
+  .trafic-light {
+    background-color: #ff0000;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 400px) {
+  .trafic-light {
+    background-color: #ffff00;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 600px) {
+  .trafic-light {
+    background-color: #008000;
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=traffic-light.css.map */

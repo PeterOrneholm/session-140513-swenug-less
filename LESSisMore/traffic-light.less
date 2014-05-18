@@ -1,0 +1,20 @@
+﻿@import "styles/mixins.less";
+
+.trafic-light-state(@index, @breakpoint, @color) {
+    @media (min-width: @breakpoint){
+        background-color: @color;
+        margin-top: @index * 50px;
+    }
+}
+
+.trafic-light {
+    width: 50px;
+    height: 50px;
+
+    .rounded-corners(50%);
+    .transition(all 0.5s ease);
+
+    .trafic-light-state(0, 200px, red);
+    .trafic-light-state(1, 400px, yellow);
+    .trafic-light-state(2, 600px, green);
+}

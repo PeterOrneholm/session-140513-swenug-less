@@ -1,0 +1,30 @@
+﻿.rounded-corners(@radius: 10px) {
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.move-up(@distance) {
+    -moz-transform: translateY(-@distance);
+    -ms-transform: translateY(-@distance);
+    -o-transform: translateY(-@distance);
+    -webkit-transform: translateY(-@distance);
+    transform: translateY(-@distance);
+}
+
+.transition(@transition) {
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    -webkit-transition: @transition;
+    transition: @transition;
+}
+
+.indicate-hover(@color) {
+    .transition(all 1s ease);
+
+    &:hover {
+        .move-up(10px);
+        background-color: @color;
+    }
+}
